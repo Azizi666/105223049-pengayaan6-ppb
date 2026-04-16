@@ -61,7 +61,6 @@ class SoundFragment : Fragment() {
     private fun playSound(id: Int) {
         val soundId = soundIds[id] ?: 0
         if (soundId != 0) {
-            // Kita coba putar saja, jika belum siap SoundPool biasanya hanya diam
             val streamId = soundPool?.play(soundId, 1f, 1f, 1, 0, 1f) ?: 0
             if (streamId == 0 && !readySounds.contains(soundId)) {
                 Toast.makeText(context, "Suara sedang dimuat...", Toast.LENGTH_SHORT).show()
