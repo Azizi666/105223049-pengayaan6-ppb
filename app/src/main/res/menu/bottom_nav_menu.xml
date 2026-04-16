@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_player"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Player" />
+    <item
+        android:id="@+id/navigation_sound"
+        android:icon="@android:drawable/ic_lock_silent_mode_off"
+        android:title="Sound Effects" />
+    <item
+        android:id="@+id/navigation_recorder"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:title="Recorder" />
+</menu>
